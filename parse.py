@@ -111,7 +111,10 @@ def resume_to_Markdown(contents, only_tags=None):
     """Parse a resume from TOML and output MarkDown to standard output."""
     sections = contents.keys()
     personal = contents["personal"]
-    print "# %s for %s\n" % (contents["title"], personal["name"])
+    if "title" in contents.keys():
+        print "# %s for %s\n" % (contents["title"], personal["name"])
+    else:
+        print "# %s\n" % (personal["name"])
 
     ## PERSONAL BLOCK
     # Handle birthday
