@@ -1,11 +1,19 @@
+# Example resume
 
+# All keywords are case sensitive. Reading the TOML spec is recommended.
+
+# If given, the title will show up as "<title> for <name>" at the top of the resume.
+# Otherwise just the name is printed.
 title = "Resume"
-date = 2013-04-26T00:00:00Z
 
+# PERSONAL DETAILS
+# Only the name is mandatory.
 [personal]
 name = "Olli Wilkman"
+# The address can be either a string or a list of strings.
+# If a list is given, the strings are printed on separate lines in the Markdown output.
 address = ["Johan Sederholmin tie 2 B 17", "00810 Helsinki"]
-birthday = 1984-05-14T14:10:00Z
+birthday = 1984-05-14T14:10:00Z # This can be either a full date or a string
 email = "olli.wilkman@iki.fi"
 phone = "+358 40 1638 950"
 
@@ -15,7 +23,12 @@ phone = "+358 40 1638 950"
 title = "Bachelor of Science"
 field = "astronomy"
 where = "University of Helsinki"
-end = "June 2009"
+# start = September 2004 # Start can be given...
+end = "June 2009" # ...but only the end date is mandatory for studies
+# If only start is given, no dates are printed.
+
+# Start and end dates for studies can be either given in the full date format,
+# or as .
 
 [education.master]
 title = "Master of Science"
@@ -24,6 +37,7 @@ where = "University of Helsinki"
 end = "December 2011"
 description = "Master's thesis topic: Lunar Mare photometry from SMART-1/AMIE data, grade Magna Cum Laude Approbatur."
 
+# description adds a paragraph of text.
 
 # WORK EXPERIENCE
 [work.GL2007]
@@ -32,6 +46,9 @@ where = "Finnish Geodetic Institute"
 start = "May 2007"
 end = "October 2007"
 description = "Working in the division of Geodesy and Geophysics. The work involved assisting in geodetic measurement campaigns with GPS and precise levelling, assisting in the calibration of instruments. Also performing structural renovations at the Nummela baseline and Metsahovi observatory. Later in the autumn assisting in the calibration of the Nummela baseline using Vaisala white-light interferometry. The work involved setting up equipment and doing meteorological measurements."
+
+# Dates for work start and end bust be given in either "Monthname Year", "Year" or full date format.
+# In any case only the month and year are printed in the final output.
 
 [work.GL2008a]
 title = "Fieldwork assistant"
@@ -91,6 +108,7 @@ description = "Working towards my Ph.D. in astronomy. The topic of my research i
 # 2 - good
 # 3 - fluent
 # 4 - native
+# Currently you must provide both written and oral score
 [skills.language.Finnish]
     written = 4
     oral = 4
@@ -104,6 +122,7 @@ description = "Working towards my Ph.D. in astronomy. The topic of my research i
     written = 1
     oral = 1
 
+# Other skills are just a list of strings.
 [skills]
 other = [
     "Driver's license (EU B class)", 
@@ -114,6 +133,10 @@ other = [
 
 
 ## EXTRACURRICULAR ACTIVITIES
+# These work just like jobs. Jobs also have a preposition keyword.
+# By default they read like "assistant AT company", but can be changed
+# at will for the cases where something like "for", "with" or "of"
+# sounds better.
 [extra.meridiaani]
 title = "Secretary"
 where = "Meridiaani ry"
