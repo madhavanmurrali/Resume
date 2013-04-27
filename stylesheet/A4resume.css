@@ -1,0 +1,28 @@
+
+body {
+    width: 210mm;
+    height: 297mm;
+    background: white;
+    padding-left: 15mm;
+    padding-right: 15mm;
+}
+h1 {
+    font-variant: small-caps;
+}
+h2 {
+    float: left;
+    font-size: 13pt;
+    width: 39mm;
+    font-variant: small-caps;
+}
+div.content {
+    float: left;
+    width: 170mm;
+}
+h3 {
+    font-size: 12pt;
+    margin-left: 3mm;
+}
+p {
+    margin-left: 8mm;
+}

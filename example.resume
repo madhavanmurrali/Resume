@@ -1,0 +1,150 @@
+
+title = "Resume"
+date = 2013-04-26T00:00:00Z
+
+[personal]
+name = "Olli Wilkman"
+address = ["Johan Sederholmin tie 2 B 17", "00810 Helsinki"]
+birthday = 1984-05-14T14:10:00Z
+email = "olli.wilkman@iki.fi"
+phone = "+358 40 1638 950"
+
+
+# EDUCATION
+[education.bachelor]
+title = "Bachelor of Science"
+field = "astronomy"
+where = "University of Helsinki"
+end = "June 2009"
+
+[education.master]
+title = "Master of Science"
+field = "astronomy"
+where = "University of Helsinki"
+end = "December 2011"
+description = "Master's thesis topic: Lunar Mare photometry from SMART-1/AMIE data, grade Magna Cum Laude Approbatur."
+
+
+# WORK EXPERIENCE
+[work.GL2007]
+title = "Research assistant"
+where = "Finnish Geodetic Institute"
+start = "May 2007"
+end = "October 2007"
+description = "Working in the division of Geodesy and Geophysics. The work involved assisting in geodetic measurement campaigns with GPS and precise levelling, assisting in the calibration of instruments. Also performing structural renovations at the Nummela baseline and Metsahovi observatory. Later in the autumn assisting in the calibration of the Nummela baseline using Vaisala white-light interferometry. The work involved setting up equipment and doing meteorological measurements."
+
+[work.GL2008a]
+title = "Fieldwork assistant"
+where = "Finnish Geodetic Institute"
+start = "May 2008"
+end = "July 2008"
+description = "Division of Geodesy and Geophysics. Assisting in geodetic measurement campaigns, including GPS, precise levelling and calibration of the FinnRef GPS stations. Assisting in the calibration of instruments."
+
+[work.GL2008b]
+title = "Research assistant"
+where = "Finnish Geodetic Institute"
+start = "September 2008"
+end = "December 2008"
+description = "Reduction of geodetic measurement data and writing software tools for data conversions in Python."
+
+[work.sivari]
+title = "Research assistant"
+where = "University of Helsinki"
+start = "September 2009"
+end = "July 2010"
+description = "Working at a research group on aerosol physics under professor Hanna Vehkamaki. The work involved writing software tools in Matlab and Python."
+
+[work.gradu]
+title = "Research assistant"
+where = "University of Helsinki"
+start = "January 2011"
+end = "December 2011"
+description = "Working part-time on my Master's thesis. The topic of the thesis was simulating the regolith of atmosphereless bodies in the solar system, with applications to photometry of the Lunar surface from spacecraft CCD images."
+
+[work.jatko-opinnot]
+title = "PhD student"
+where = "University of Helsinki"
+start = "January 2012"
+end = "present"
+description = "Working towards my Ph.D. in astronomy. The topic of my research is regolith simulations. Continuing on the photometry of the Lunar surface from my Master's thesis, as well as studying asteroid photometry and X-ray fluorescence in the surface of Mercury."
+
+
+## SKILLS
+# These are relative to astronomers, not computer scientists
+# Computer skills scale:
+# 1 - basics
+# 2 - good
+# 3 - excellent
+[skills.computer]
+    Fortran = 2
+    C = 1
+    Python = 3
+    IDL = 1
+    Matlab = 2
+    Windows = 1
+    Linux = 2
+    OS_X = 3
+    HTML_and_CSS = 2
+
+# Languages scale:
+# 1 - basic
+# 2 - good
+# 3 - fluent
+# 4 - native
+[skills.language.Finnish]
+    written = 4
+    oral = 4
+[skills.language.English]
+    written = 3
+    oral = 3
+[skills.language.Swedish]
+    written = 2
+    oral = 2
+[skills.language.German]
+    written = 1
+    oral = 1
+
+[skills]
+other = [
+    "Driver's license (EU B class)", 
+    "Red Cross basic first aid training",
+    "WWF basic oil spill response training"
+]
+
+
+
+## EXTRACURRICULAR ACTIVITIES
+[extra.meridiaani]
+title = "Secretary"
+where = "Meridiaani ry"
+start = "January 2006"
+end = "December 2007"
+preposition = "of"
+
+[extra.AE]
+title = "Member of the board"
+where = "Alter Ego ry"
+start = "January 2006"
+end = "December 2010"
+preposition = "of"
+
+[extra.AEvpj]
+title = "Vice chairman"
+where = "Alter Ego ry"
+start = "January 2009"
+end = "December 2010"
+preposition = "of"
+
+[extra.FUN]
+title = "Secretary, founding member"
+where = "Finnish Ukulele Network ry"
+start = "November 2007"
+end = "December 2009"
+preposition = "of"
+
+[extra.Ropecon]
+title = "Chief of logistics"
+where = "Ropecon"
+start = "2009"
+end = "2010"
+preposition = "for"
